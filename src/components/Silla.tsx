@@ -12,9 +12,10 @@ const Silla = ({ silla, lideres, onSillaClick, numeroSilla }: SillaProps) => {
         ? lideres.find(lider => lider.id === silla.ocupadaPor)
         : null;
 
-    const estilo = liderAsignado
-        ? { backgroundColor: liderAsignado.color }
-        : {};
+    const estilo = {
+        backgroundColor: liderAsignado ? liderAsignado.color : 'white',
+        color: liderAsignado ? 'white' : '#333'
+    };
 
     // Determinar si mostrar el número de silla o la coordenada fila-columna
     const texto = numeroSilla !== undefined ? numeroSilla : `${silla.fila}-${silla.columna}`;

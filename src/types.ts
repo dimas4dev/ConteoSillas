@@ -6,9 +6,9 @@ export interface Lider {
 
 export interface Silla {
     id: number;
-    ocupadaPor: number | null; // ID del líder o null si está vacía
     fila: number;
     columna: number;
+    ocupadaPor: number | null;
 }
 
 export interface Seccion {
