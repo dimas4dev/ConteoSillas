@@ -8,9 +8,18 @@ interface ModalPanelLideresProps {
     isOpen: boolean;
     onClose: () => void;
     onConfirmar: () => void;
+    sillas: { id: number; fila: number; columna: number; ocupadaPor: number | null; }[];
 }
 
-const ModalPanelLideres = ({ lideres, liderSeleccionado, onLiderSelect, isOpen, onClose, onConfirmar }: ModalPanelLideresProps) => {
+const ModalPanelLideres = ({
+    lideres,
+    liderSeleccionado,
+    onLiderSelect,
+    isOpen,
+    onClose,
+    onConfirmar,
+    sillas
+}: ModalPanelLideresProps) => {
     if (!isOpen) return null;
 
     return (
@@ -25,6 +34,7 @@ const ModalPanelLideres = ({ lideres, liderSeleccionado, onLiderSelect, isOpen, 
                     liderSeleccionado={liderSeleccionado}
                     onLiderSelect={onLiderSelect}
                     onConfirmar={onConfirmar}
+                    sillas={sillas}
                 />
             </div>
         </div>

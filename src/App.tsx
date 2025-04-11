@@ -232,6 +232,7 @@ function App() {
         liderSeleccionado={liderSeleccionado}
         onLiderSelect={setLiderSeleccionado}
         onConfirmar={handleConfirmarLider}
+        sillas={sillas}
       />
     </div>
   )

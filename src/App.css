@@ -465,3 +465,24 @@ button {
   width: 20px;
   height: 20px;
 }
+
+/* Estilos para el botón de exportar Excel */
+.exportar-excel-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #217346;
+  /* Color verde de Excel */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  width: 100%;
+  max-width: 250px;
+}
+
+.exportar-excel-btn:hover {
+  background-color: #1e6b3e;
+  transform: translateY(-1px);
+}
