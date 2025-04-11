@@ -246,7 +246,7 @@ button {
 /* Escenario */
 .escenario {
   grid-area: escenario;
-  width: 100%;
+  width: 36%;
   height: 300px;
   background-color: #8B4513;
   color: white;
