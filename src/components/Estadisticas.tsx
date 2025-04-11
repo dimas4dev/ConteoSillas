@@ -1,4 +1,4 @@
-import { Silla, Lider, Seccion } from '../types';
+import { Lider, Seccion } from '../types';
 
 interface EstadisticasProps {
     secciones: Seccion[];
